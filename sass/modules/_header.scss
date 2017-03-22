@@ -1,0 +1,75 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  
+  @include atMedium{ 
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  width: 100%;
+  position: relative;
+
+  .button {
+    width: 120px;
+    padding: 6px 8px;
+    font-size: .58rem;
+
+    @include atSmall{
+      width: 160px;
+      padding: 8px 10px;
+      font-size: .65rem;
+    }
+
+    @include atLarge{
+      width: 200px;
+      padding: 10px 10px;
+      font-size: .75rem;
+    }
+  }
+}
+
+.header__text {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  width: 9.5rem;
+  color: white;
+  font-weight: 200;
+  
+  &--emphasis {
+    font-weight: 400;
+  }
+  @include atSmall{
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: .3px;
+    width: 11.5rem;
+  }
+
+  @include atMedium{
+    font-size: 1.5rem;
+    width: 14.5rem;
+  }
+
+  @include atLarge {
+    font-size: 2.2rem;
+    width: 20.5rem;
+    top: -7%;
+    letter-spacing: .6px;
+  }
+}
+
+.header__button-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  margin-top: 15px;
+
+  .button:first-child{
+    margin-right: 10px;
+  }
+}

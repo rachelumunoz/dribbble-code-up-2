@@ -1,0 +1,84 @@
+.how-to-container {
+  @include atMedium{
+    width: 75%;
+    margin: 0 auto 15px auto;
+
+  }
+}
+
+.how-to {
+  
+  @include atSmall{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.how-to__step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin: 0 auto;
+    // align-items: center;
+    padding: 15px 10px 0 10px;
+    line-height: 2;
+    height: 150px;
+  
+
+  @include atSmall{
+    height: 200px;
+    padding: 35px 10px 15px 10px;
+  }
+  
+  &--extra-top-padding{
+     // padding: 15px 10px 0 10px;
+  }
+  &__svg{
+    margin: 0 auto 5px auto;
+    height: 25px;
+    width: 25px;
+    
+
+    @include atSmall {
+      height: 37px;
+      width: 37px;
+      
+    }
+  }
+  
+  &__header {
+    margin: 0;
+    font-size: .9rem;
+
+    @include atSmall{
+      font-size: 1rem;
+    }
+  }
+
+  &__call-to-action{
+    margin-top: 15px;
+    color: hotpink;
+    font-size: .75rem;
+  }
+
+  &container {
+    width: 100%;
+  }
+  
+
+
+  &__container__detail{
+    width: 200px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: .75rem;
+    font-weight: 200;
+  }
+
+  @include atSmall{
+    width: 33%;
+    
+  }
+}

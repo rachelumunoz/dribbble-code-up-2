@@ -1,0 +1,50 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  font-size: .75rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: all 0.2s;
+
+
+  &--hollow{
+    border: 1px solid white;
+  }
+
+  &--facebook{
+    border: 1px solid $facebookBlue;
+    background-color: $facebookBlue;
+  }
+}
+
+.button:hover{
+   background-color: $facebookBlueDark;
+}
+
+.button--hollow:hover{
+  background-color: $facebookBlue;
+  border: 1px solid $facebookBlue;
+}
+
+
+.call-to-action{
+    margin-top: 15px;
+    color: hotpink;
+    font-size: .75rem;
+  }
