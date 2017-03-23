@@ -37,6 +37,8 @@ hr {
 .rankings__cell__details{
   display: flex;
   align-items: center;
+  // border: 1px solid black;
+  width: 150px;
 }
 
 .rankings__cell__details__text {
@@ -54,6 +56,9 @@ hr {
   font-size: .6rem;
 }
 
+.rankings__cell__more-arrow {
+
+}
 
 .call-to-action {
 
