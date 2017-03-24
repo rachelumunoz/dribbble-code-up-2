@@ -33,8 +33,9 @@
 
 .header__text {
   position: absolute;
-  top: 4%;
   left: 3%;
+  top: 0;
+
   width: 12.5rem;
   color: white;
   font-weight: 200;
@@ -60,9 +61,10 @@
   }
 
   @include atLarge {
+    // top: 4%;
     font-size: 1.8rem;
     width: 23.5rem;
-    top: -7%;
+    // top: -7%;
     letter-spacing: .6px;
   }
 }
